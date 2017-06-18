@@ -1,0 +1,14 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class StartScene : MonoBehaviour {
+
+    void Start()
+    {
+        Screen.SetResolution(1280, 720, true);
+        Application.LoadLevel("LoadingScene");
+		GoogleAdmob.RequestInterstitial ();
+
+        //VariableSystem.AddDiamond(1000);
+    }
+}
